@@ -1,4 +1,4 @@
-> ### Laboratorio01-Arep-2021-1
+### Laboratorio01-Arep-2021-1
 
 ## Instalación
 >
