@@ -60,6 +60,7 @@ public class Lista {
      * Metodo que informa el valor almacenado en cada nodo
      * @param indice la posicion que se desea consultar del nodo para saber el valor
      * @return el valor almacenado en dicho nodo
+     * @throws ListaException
      */
     public double getValor(int indice) throws ListaException {
         Nodo examinar=inicio;

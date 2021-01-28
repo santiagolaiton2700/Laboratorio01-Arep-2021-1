@@ -11,9 +11,7 @@ public class Nodo {
 
     /**
      * Contructor del nodo cuando no hay ningún nodo en la lista
-     * @param Valor numero que se almacenara en el nodo
-     * @param La conexion de este nodo con el siguiente
-     * @param La posicion del nodo en la lista doblemente
+     * @param valor numero que se almacenara en el nodo
      */
     public Nodo(double valor){
         this.valor=valor;
@@ -22,9 +20,9 @@ public class Nodo {
     }
     /**
      * Contructor del nodo
-     * @param Valor numero que se almacenara en el nodo
-     * @param La conexion de este nodo con el siguiente
-     * @param La posicion del nodo en la lista doblemente
+     * @param valor El numero que se almacenara en el nodo
+     * @param derecha La conexion de este nodo con el siguiente
+     * @param indice La posicion del nodo en la lista doblemente
      */
     public Nodo(double valor,Nodo derecha,int indice){
         this.valor=valor;

@@ -6,7 +6,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
     /**
      * Prueba que da el promedio de unos datos creados
      */
-    public void testPromedio()throws Exception{
+    public void testPromedio(){
         Stat calculadora=new Stat();
         calculadora.anadirNumero(14);
         calculadora.anadirNumero(15);
@@ -16,7 +16,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
         calculadora.anadirNumero(13);
         try{
             assertEquals(calculadora.mean(),14.5);
-        }catch (Exception e){
+        }catch (ListaException e){
             assertFalse(true);
         }
 

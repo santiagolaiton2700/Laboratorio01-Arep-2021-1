@@ -41,18 +41,21 @@ public class Stat {
     /**
      * Metodo que calcula el promedio de los numeros de la lista enlazada
      * @return promedio de los numeros de la lista
-     * @throws ListaException
+     * @throws ListaException Clase de excepciones creada
      */
     public double mean()throws ListaException{
         int redondear=2;
         double suma=0.0;
         int longitud=numeros.getLongitud();
-        for (int i=0;i<longitud;i++){
-            suma=suma+numeros.getValor(i);
+        try{
+            for (int i=0;i<longitud;i++){
+                suma=suma+numeros.getValor(i);
+            }
+            Double enviar=suma/longitud;
+            return operacionMeanYstddev(enviar,redondear);
+        }catch (ListaException exception) {
+            throw new ListaException(ListaException.fuera);
         }
-        Double enviar=suma/longitud;
-
-        return operacionMeanYstddev(enviar,redondear);
     }
 
     /**
@@ -73,7 +76,7 @@ public class Stat {
     /**
      * Metodo que calcula la desviación estandar
      * @return La desviación estandar calculada de los datos de la lista enlazada
-     * @throws ListaException
+     * @throws ListaException clase creada para excepciones de lista
      */
     public double stddev() throws ListaException {
         double listaPromedio=mean();
