@@ -1,4 +1,5 @@
 ### Laboratorio01-Arep-2021-1
+>
 
 ## Instalación
 >
@@ -26,15 +27,15 @@
  >
  Muestra de la compilación del proyecto mvn package : 
  
- ![](Imagenes/mvnPackage.png)
+ ![](Imgenes/mvnPackage.png)
  
   Muestra de la compilacion de la clase principal :
   
-  ![](Imagenes/main.png)
+  ![](Imgenes/main.png)
   
   Muestra de la compilacion de las pruebas con :```$ mvn test ```
   
-   ![](Imagenes/test.png)
+   ![](Imgenes/test.png)
    
    ## Construido por:
    - Santiago Agustin Laiton Cubides
