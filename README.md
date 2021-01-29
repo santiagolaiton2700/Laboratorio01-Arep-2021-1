@@ -27,15 +27,15 @@
  >
  Muestra de la compilación del proyecto mvn package : 
  
- ![](Imgenes/mvnPackage.png)
+ ![](Recursos/Imgenes/mvnPackage.png)
  
   Muestra de la compilacion de la clase principal :
   
-  ![](Imgenes/main.png)
+  ![](Recursos/Imgenes/main.png)
   
   Muestra de la compilacion de las pruebas con :```$ mvn test ```
   
-   ![](Imgenes/test.png)
+   ![](Recursos/Imgenes/test.png)
    
    ## Construido por:
    - Santiago Agustin Laiton Cubides
