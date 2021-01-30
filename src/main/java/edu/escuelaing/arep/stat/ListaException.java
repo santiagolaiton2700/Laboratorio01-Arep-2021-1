@@ -6,7 +6,6 @@ package edu.escuelaing.arep.stat;
  */
 public class ListaException extends Exception {
     public static final String fuera="fuera de rango";
-
     public ListaException(String message){
         super(message);
     }

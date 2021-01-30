@@ -28,6 +28,7 @@ public class Nodo {
         this.valor=valor;
         this.derecha=derecha;
         this.indice=indice;
+        
     }
 
     /**

@@ -42,7 +42,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
      * Prueba que da el primedio de la columna uno del pdf
      */
     public void testPromedioColumna1(){
-        Stat calculadora=new Stat("numeros.txt");
+        Stat calculadora=new Stat("Recursos/numeros.txt");
         try{
             assertEquals(calculadora.stddev(),572.03);
             assertEquals(calculadora.mean(),550.6);
@@ -54,7 +54,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
      * Prueba que da la desviacion estandar  de la columna uno del pdf
      */
     public void testDesviacionColumna1(){
-        Stat calculadora=new Stat("numeros.txt");
+        Stat calculadora=new Stat("Recursos/numeros.txt");
         try{
             assertEquals(calculadora.stddev(),572.03);
         }catch (Exception e){
@@ -66,7 +66,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
      * Prueba que da la desviacion de mas de 100 datos
      */
     public void testCiendatosDesviacion(){
-        Stat calculadora=new Stat("numeros3.txt");
+        Stat calculadora=new Stat("Recursos/numeros3.txt");
         try{
             assertEquals(calculadora.stddev(),14087.06);
         }catch (Exception e){
@@ -77,7 +77,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
      * Prueba que da el promedio de mas de 100 datos
      */
     public void testCiendatosPromedio(){
-        Stat calculadora=new Stat("numeros3.txt");
+        Stat calculadora=new Stat("Recursos/numeros3.txt");
         try{
             assertEquals(calculadora.mean(),4762.61);
         }catch (Exception e){
@@ -88,7 +88,8 @@ public class CalculadoraEstadisticaTest extends TestCase {
      * Prueba que da la desviacion estandar de la columna dos del pdf
      */
     public void testDesviacionColumna2(){
-        Stat calculadora=new Stat("numeros2.txt");
+
+        Stat calculadora=new Stat("Recursos/numeros2.txt");
         try{
             assertEquals(calculadora.stddev(),62.26);
         }catch (Exception e){
@@ -96,7 +97,7 @@ public class CalculadoraEstadisticaTest extends TestCase {
         }
     }
     public void testPromedioColumna2(){
-        Stat calculadora=new Stat("numeros2.txt");
+        Stat calculadora=new Stat("Recursos/numeros2.txt");
         try{
             assertEquals(calculadora.mean(),60.32);
         }catch (Exception e){

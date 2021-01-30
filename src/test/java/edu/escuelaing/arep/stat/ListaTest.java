@@ -104,6 +104,7 @@ public class ListaTest extends TestCase {
         }
     }
     public void testNodoSiguiente()throws Exception{
+
         ArrayList<Double> lista=new ArrayList<Double>();
         lista.add((double)20);
         lista.add((double)8);

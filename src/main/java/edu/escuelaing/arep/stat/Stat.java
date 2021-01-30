@@ -78,6 +78,7 @@ public class Stat {
      * @return La desviación estandar calculada de los datos de la lista enlazada
      * @throws ListaException clase creada para excepciones de lista
      */
+
     public double stddev() throws ListaException {
         double listaPromedio=mean();
         double suma=0.0;
